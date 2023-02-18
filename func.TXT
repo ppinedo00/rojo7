@@ -1,0 +1,48 @@
+FAVORITAS:
+
+***************** WKS: TEXTO /23 **************
+CHAR(num) / CODE(cad)       >> VBA: chr(65) / asc("A")
+CONCAT() / &
+>> *** File >> Options >> Advanced:: DECIM/, - MIL/.
+FIXED(num;dec;false) / FIXED(85,3;2) >> 85,30          >> format(245813.5862,"Standard")>>248.513,59 / format(245813.12,"##########.####")>>245813,12
+RIGHT() / LEFT() / MID()
+FIND() / SEARCH()           >>>instr(s1,s2)
+TRIM()
+EXACT()                     >> s1=s2 / strcomp(s1,s2)
+LEN()
+CLEAN() - car ctrol(0-31)
+UPPER() / LOWER() / PROPER()        >> ucase() / lcase()
+DOLLAR(num;dec)             >> format(num,"currency")
+REPLACE(txt1;ini;desp;txt2) / SUBSTITUTE(txt;A;B [;nªocurr])		>> - / replace()
+REPT(cad;num)       			>> string(num,cad)
+T(txt/num)
+TEXT(1587;"#.#") >>1587 / TEXT(27,9;"#,00") >> 27,90         >> format (num,cad)
+VALUE("16/9/1997") / VALUE("3:06") / VALUE("45,9") >> 45,9      >> val("45,9") >> 45
+
+***************** LOGICAS /6 **************
+TRUE() / FALSE()
+NOT(5>3) / NOT(cad1=cad2)
+AND() /OR()
+IF(222>187;V;F)
+
+***************** FECHA/HORA /21 **************
+NOW() / TODAY()                   >> now / date
+YEAR(fecha) / MONTH(fecha) / DAY(fecha)
+DATE(año;mes;dia) / TIME(hora;minuto;segundo)
+DATEVALUE("1/1/1900") / EDATE(fecha;nªmeses) / TIMEVALUE(hora)
+EOMONTH(fecha;nªmeses)
+DAYS360(fecha1;fecha2) / DATEDIF(fecha1;fecha2;interv)
+dias habiles >> NETWORKDAYS(fecha1;fecha2[ ;fest])
+dia laborable >> WORKDAY(fecha1;nºdias[ ;fest])
+WEEKDAY(fecha;2)
+HOUR(hora) / MINUTE(hora) / SECOND(hora)
+WEEKNUM(fecha;1)
+
+***************** BUSQUEDA/17 **************
+VLOOKUP() / INDEX(tab;fila;col) / CHOOSE(ind;val1;val2;val3;..) / MATCH(val;vect;0)
+COLUMN([tab/cell]) / ROW()
+COLUMNS(tab) / ROWS()
+OFFSET(cell;nºfilas;nºcolumnas) / 
+ADDRESS(fila;col[;referX4;estiloX2;cadHoja]) / INDIRECT(cell)
+{TRANSPONER(tab)}
+SUMAPRODUCTO(rng1;rng2;rng3;...)
